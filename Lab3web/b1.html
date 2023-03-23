@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bài 1 </title>
+    <style>
+        .bao{
+            margin: 10px auto;
+            text-align: center;
+           
+        }
+        header{
+             background-color: #eee;
+             min-height: 50px;
+        }
+        header h3{
+            position: absolute;
+            left: 50%;
+        }
+        nav{
+            margin-top: 10px;
+            background-color: #eee;
+            min-height: 50px;
+            line-height: 40px;
+            width: 100%;
+        }    
+        .noiDung{
+            margin-top: 10px;
+             display: flex;
+            width: 100%;
+            gap: 10px;
+           justify-content: center;
+        }
+        .row1{
+            background-color: #eee;
+            width: 20%;
+            height: 250px;
+            line-height: 200px;
+
+        }
+        .row2{
+            background-color: #eee;
+            flex-grow: 1;
+            height: 250px;
+            line-height: 200px;
+
+        }
+        .row3{
+            background-color: #eee;
+            width: 20%;
+            height: 250px;
+            line-height: 200px;
+
+        }
+        footer{
+             height: 50px;
+             line-height: 50px;
+            clear: both;
+            background-color: #eee;
+        }
+        @media screen and (max-width: 500px) {
+            .noiDung{
+                display: block;
+                margin-top: 10px;
+            }
+            .row1{ 
+                
+                display: block;
+                width: 100%;
+            }
+            .row2{
+                margin-top: 10px;
+                display: block;
+                width: 100%;
+            }
+            .row3{ 
+                margin-top: 10px;
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bao">
+        <header><h3>Header</h3></header>
+        <nav>Thanh menu điều hướng</nav>
+        <div class="noiDung">
+            <div class="row1" ><p>Nội dung</p></div>
+            <div class="row2" ><p>Nội dung chính</p></div>
+            <div class="row3"><p>Nội dung chính</p></div>
+        </div>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+</html>
